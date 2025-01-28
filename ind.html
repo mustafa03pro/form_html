@@ -5,24 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        background-color: black;
+    }
+    div{
+        color: white;
+        width: 300px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+        box-shadow: 0 0 3px red;
+
+
+    }
+    h2{
+        text-align: center;
+        text-decoration: navy 1px underline;
+    }
+    div:hover{
+        box-shadow: 0 0 15px yellow;
+        background-color: cadetblue;
+    }
+    span{
+        color: chartreuse;
+    }
+</style>
 <body>
-    <h2>demo on checkbox &radio button</h2>
-    <label for=""> Journey class</label>
-    <br>
-    <input type="checkbox" id="bu" name="bu" checked><label for="">Ac 1<sup>st</sup>class</label><br
->    <input type="checkbox" id="bu" name="bu" checked><label for="">Ac 2<sup>nd</sup>class</label><br>
-    <input type="checkbox" id="bu" name="bu" checked><label for="">sleeper 3<sup>rd</sup>class</label><br>
-    <input type="checkbox" id="bu" name="bu" checked><label for="">general 4<sup>th</sup>class</label><br>
-    <label for="">select gender</label><br>
+    <div >
+        <h2>Registration form</h2>
     
-    <input type="radio" name="ms"><label for="">male</label><br>
-    <input type="radio" name="ms"><label for="">female</label><br>
-    <fieldset>
-        <legend for="">marital status</legend><br>
-        <input type="radio" name="ms1"><label for="">single</label>
-        <input type="radio" name="ms1"><label for="">married</label>
-        <input type="radio" name="ms1"><label for="">widow</label>
-        <input type="radio" name="ms1"><label for="">other</label>
-    </fieldset>
+        <form id="f1" action="reg.html" autocomplete="off">
+            <p>
+                <label for="na">Full Name</label><span>*</span><br>
+                <input type="text" id="na" name="na" autofocus>
+            </p>
+            <p>
+                <label for="em">Email</label><span>*</span><br>
+                <input type="email" id="em" name="em" >
+            </p>
+            <p>
+                <label for="no">Phone No</label><span>*</span><br>
+                <input type="number" id="no" name="no" min="6000000000" max="9999999999" required>
+            </p>
+            <p>
+                <label for="do">D.o.b</label><br>
+                <input type="date" id="do" name="do" min="1998-1-1" max="2009-12-30" >
+            </p>
+            <p>
+                <label for="go">Gender</label><br>
+                <input type="radio" id="g1" name="go"  ><label for="">male</label><br>
+                <input type="radio" id="g2" name="go"  ><label for="">female</label><br>
+                <input type="radio" id="g3" name="go"  ><label for="">other</label><br>
+            </p>
+            <p>
+                <label for="so">select course</label><br>
+                <select name="so" id="">
+                    <option value="">java</option>
+                    <option value="">python</option>
+                    <option value="">.Net</option>
+                    <option value="">devops</option>
+                </select>
+            </p>
+            <p>
+                <label for="mot">Mode of traning</label><br>
+                <select name="mot" id="">
+                    <option value="on">online</option>
+                    <option value="off">offline</option>
+                    <option value="pl">placement</option>
+                    <option value="it">intership</option>
+                </select>
+            </p>
+            <p align="center">
+                <input type="checkbox" id="t1" name="t1" value="true" required><label for="" >I Accept all terms & condition</label><br>
+                <button>Enroll now</button>
+
+            </p>
+        
+     
+        </form>
+    </div>
 </body>
 </html>
