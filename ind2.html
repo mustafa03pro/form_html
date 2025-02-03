@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: aqua;">
-    <h2>demo on file uploading</h2>
-    <form action="uploadfile.php" method="post" enctype="multipart/form-data">
-        <input type="file"><br>
-        <input type="file" multiple>
-        <input type="file" accept=".html">
-        <button>submit</button>
-    </form>
-    
+<body>
+    <h2>demo on audio &source tag</h2>
+    type-1
+    <audio controls >
+        <source src="" type="audio/mp3">
+    </audio>
+    type-2
+    <audio controls src="" autoplay></audio><br>
+    <audio controls  muted >
+        <source src="" type="audio/mp3">
+    </audio>
 </body>
 </html>
